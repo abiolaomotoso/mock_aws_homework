@@ -1,4 +1,4 @@
-><!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Mock Amazon</title>
@@ -8,16 +8,27 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-  </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <style> 
+      .Center { 
+        width:900px; 
+        height:300px; 
+        position: fixed;
+        top: 20%; 
+        left: 60%; 
+        margin-top: -150px; 
+        margin-left: -150px; 
+      } 
+      
+  </style> 
+</head>
   <body>
-    <div>
-
-    </div>
-    <div class="container">
+    <div class="container Center">
+      <span class="border"></span>
       <div class="row row centered">            
         <div class="col-md-4 col-centered">
-                <img id="logo" src="images\amazon logo.PNG" class="center">
+                <img id="logo" src="images\amazon logo.PNG">
                 <form>
                   <div class="form-group">
                       <h2>Sign in</h2>
@@ -31,20 +42,21 @@
                   </div>
                   <button type="submit" class="btn btn-warning btn-block">Sign-In</button>
                   <small id="emailHelp" class="form-text text-muted">By continuing, you agree to Amazon's <a href=""> Condition of Use </a> and <a href=""> Privacy Notice</a> </small>
+                  <br>
                   <div class="form-group form-check">
                     <label class="form-check-label">
-                      <br>
                       <input class="form-check-input" type="checkbox" name="remember"> Keep me signed in. Details
                     </label>
                   </div>
                   <div class="col text-center">
                   <small id="emailHelp" class="form-text text-muted"> New to Amazon?</small>
-                  <button type="submit" class="btn btn-light">Create your Amazon Account</button>
+                  <button type="submit" class="btn btn-light btn-block">Create your Amazon Account</button>
                 </div>
                  </form>
-              </div>  
+                </span> 
+              </div> 
           </div>
-        </div>
+        </div>   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
